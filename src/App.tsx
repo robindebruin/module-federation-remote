@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -7,7 +6,7 @@ function App() {
 
   return (
     <div>
-      <h1>Module federation host app</h1>
+      <h1>Module federation remote component</h1>
       <div>
         <button onClick={handleClick}>count is {count}</button>
       </div>

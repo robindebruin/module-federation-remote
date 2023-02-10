@@ -5,7 +5,7 @@ function App() {
     <div>
       <h1>Module federation remote component</h1>
       <div>
-        <BlaBla caption="TEST" />
+        <BlaBla caption="TEST" callback={() => {}} />
       </div>
     </div>
   );

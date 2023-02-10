@@ -1,3 +1,15 @@
-import React from "react";
+interface ButtonProps {
+  caption: string;
+  callback: () => void;
+}
 
-export default ({ caption = "Shared Button" }) => <button className="shared-btn">{caption}</button>;
+export default ({ caption = "Shared Button", callback }: ButtonProps) => {
+  const handleOnClick = () => {
+    callback();
+  };
+  return (
+    <button className="shared-btn" onClick={handleOnClick}>
+      {caption}
+    </button>
+  );
+};
